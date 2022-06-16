@@ -1,0 +1,55 @@
+/* -----------------------------------------------------
+		Price Table
+   ----------------------------------------------------- */
+   
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+.page-heading h1{
+    font-family: 'Mochiy Pop P One';
+    text-align: center;
+}
+.price-table {
+	-webkit-transition: .5s;
+	transition: .5s;
+	background: #f2f3f4;
+	border-radius: 20px;
+}
+.price-table:hover{
+    transform: scale(1.05);
+}
+
+.price-table .p-table-heading .title {
+	font-size: 32px;
+	font-weight: bold;
+	color: #2bcac9;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	padding: 40px 0px;
+}
+
+.price-table .p-table-heading .price {
+	font-size: 70px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding: 10px 0px;
+}
+
+.price-table .p-table-heading .price span {
+	font-size: 40px;
+	font-weight: normal;
+}
+
+.price-table .features {
+	padding: 23px 35px 53px;
+}
+
+.price-table .features li {
+	font-size: 18px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.price-table .features .btn {
+	margin-top: 30px;
+	text-transform: uppercase;
+	font-size: 18px;
+}

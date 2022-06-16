@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.banner{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url('banner.png');
+	background-size:cover;
+	background-position: bottom;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.banner #text{
+	position: relative;
+	font-size: 120px;
+	color:#000;
+}
+
+.banner .clouds{
+	position: absolute;
+	top: 0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	pointer-events:none;
+}
+.banner .clouds img{
+	position: absolute;
+	bottom:0;
+	max-width: 100%;
+	animation: animate calc(3s * var(--i)) linear infinite;
+	
+}
+
+@keyframes animate
+{
+	0%
+	{
+		opacity:0;
+		transform: scale(1);
+	}
+	
+	25%,75%
+	{
+		opacity:1;
+	}
+	100%
+	{
+			opacity:0;
+		transform:scale(3);
+	}
+}
+
+
+
+/* how it works */
+#works{
+	background-color: rgba(43, 202, 201, 0.5);
+	height: 600px;
+}
+
+#works h1{
+	font-family: 'Mochiy Pop P One';
+}
+
+#works .col h3:hover{
+	transform: scale(1.5);
+}
+
+
+/* booking */
+
+#booking { 
+    position: relative; 
+    height: 50vh;
+    width: 100%;
+	background: url("assets/travel-bg.jpeg");
+	background-size: cover;
+	background-position: bottom;
+}
+
+#book-btn{
+	background-color: #2bcac9;
+	border: none;
+	width: 250px;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 20px;
+  }
+
+#book-btn:hover{
+	background-color: #2bcacabd;
+}
+
+/* faq */
+#faq{
+	font-family: 'Mochiy Pop P One';
+}
+
+.collapsible-link::before {
+	content: '';
+	width: 14px;
+	height: 2px;
+	background: #333;
+	position: absolute;
+	top: calc(50% - 1px);
+	right: 1rem;
+	display: block;
+	transition: all 0.3s;
+  }
+  
+  .collapsible-link::after {
+	content: '';
+	width: 2px;
+	height: 14px;
+	background: #333;
+	position: absolute;
+	top: calc(50% - 7px);
+	right: calc(1rem + 6px);
+	display: block;
+	transition: all 0.3s;
+  }
+  
+  .collapsible-link[aria-expanded='true']::after {
+	transform: rotate(90deg) translateX(-1px);
+  }
+
+  .collapsible-link[aria-expanded='false']:hover {
+	text-decoration: none;
+  }
+
+  .collapsible-link[aria-expanded='true']:hover {
+	text-decoration: none;
+  }
+
+  .collapsible-link:hover{
+	background: #FCF39D;
+  }
+
+  .collapsible-link[aria-expanded='true'] {
+	background-color: #FCF39D;
+  }
+
+  .collapsible-link[aria-expanded='true']::before {
+	transform: rotate(180deg);
+  }
+  
+  
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/styleform.css">
+</head>
+<body>
+    <div class="container">
+	
+        <form class="form" id="login" name="login" action="login.php" method="post">
+            <h1 class="form__title">Login</h1>
+            
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Email" name="email" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password" name="pass"required>
+				<div class="form__input-error-message"></div>
+            </div>
+            <input class="form__button" type="submit" value="Log In" name="login-btn"> <br><br>
+            <p class="form__text">
+                <a class="form__link" href="" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+	
+        <form class="form form--hidden" id="createAccount" name="register" action="register.php" method="post">
+            <h1 class="form__title">Create Account</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+				<label>Email</label> 
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Your Email" name="email" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+				<label>Full Name</label> 
+                <input type="text" class="form__input" autofocus placeholder="Your Name" name="name" required>
+                <div class="form__input-error-message"></div>
+            </div>
+			<div class="form__input-group">
+				<label>Address</label> 
+                <input type="text" class="form__input" autofocus placeholder="Your current Address" name="addr" required>
+                <div class="form__input-error-message"></div>
+            </div>
+			<div class="form__input-group">
+				<label> Birthday </label>
+                <input type="date" class="form__input" autofocus placeholder="Address" name="dob" required>
+                <div class="form__input-error-message"></div>
+            </div>
+			<div class="form__input-group">
+				
+                <div class="d-flex align-items-center"> 
+				<label>Gender</label> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label class="option"> <input type="radio" name="radio" value="Male">Male <span class="checkmark"></span> </label> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label class="option"> <input type="radio" name="radio" value="Female" >Female <span class="checkmark"></span> </label> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label class="option"> <input type="radio" name="radio" value="Other" >Other <span class="checkmark"></span> </label> 
+				</div>
+			</div>
+				
+			
+            <div class="form__input-group">
+				<label>Password</label> 
+                <input type="password" id="signupPassword" class="form__input" autofocus placeholder="more than 8 characters" name="pass" min="8" max="15" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <input class="form__button" type="submit" value="Sign Up" name="signup-btn">
+            <p class="form__text">
+                <a class="form__link" href="#" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+	</div>
+
+</body>
+<script src="scripts/form-validation.js"></script>
+</html>
